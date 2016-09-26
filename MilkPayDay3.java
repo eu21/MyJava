@@ -1,10 +1,12 @@
 /* Improved class MilkPayDay3
  * to help me count how many liters of milk I bought
  *
- *It takes two parameters
+ *It takes 4 parameters
  *
- *	    int StartDayOfMonth = 17; 
-	    int StartLiters = 5;
+	    int StartDayOfMonth = 17; // The day ( when I write down ) Like September 1 (only digit part).
+	    int StartLiters = 5; // The liters I already bought  ( when I write down ) 
+	    int StartMonth = 0; //!!!The month started from 0 - for "January" will be 0 and so other (month-1)
+	    int StartYear = 2016; // As it is like 2016
 	    
  */
 
@@ -24,10 +26,10 @@ public class MilkPayDay3
 
 		int curDay = calendar.get(calendar.DAY_OF_MONTH); //real day like int = 26
 		int count = 0;
-	    int StartDayOfMonth = 17; // The day ( when I write down ) 
-	    int StartLiters = 5; // The liters I already bought  ( when I write down )
-	    int StartMonth = 8; //The month ( when I write down ) like "May"
-	    int StartYear = 2015; //The month ( when I write down ) like "May"
+	    int StartDayOfMonth = 17; // The day ( when I write down ) Like September 1 (only digit part).
+	    int StartLiters = 5; // The liters I already bought  ( when I write down ) 
+	    int StartMonth = 8; //!!!The month but for "January" will be 0!!! and so other (month-1)
+	    int StartYear = 2016; // As it is like 2016
 		int curMonth = calendar.get(calendar.MONTH); //real month for January it's 0, for May it's 4, for September it's 8...
 		int curYear = calendar.get(calendar.YEAR); //real month for January it's 0, for May it's 4, for September it's 8...
 		System.out.println("curYear: "+ curYear + " ");
