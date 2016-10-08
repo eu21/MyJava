@@ -4,9 +4,12 @@ import java.util.Map;
 
 public class Fibonaci {
 
-	static int n =100;
-	
 	public static void main(String[] args) {
+		
+		int n =100;
+		
+		System.out.println(0);
+		
 	    for (int i = 0; i < n-1; i++) {
 	        System.out.println(fibonacci3(i));
 	    }
@@ -27,3 +30,7 @@ public class Fibonaci {
 	}
 	
 }
+
+/* Output: 
+218922995834555169026 
+*/
